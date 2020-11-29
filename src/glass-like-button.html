@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <style>
+      #button {
+        text-align: center;
+        display: block;
+        font-size: 100px;
+        border: 4px solid white;
+        border-radius: 30px;
+        /* background-color: rgb(204, 204, 204); */
+        box-shadow: 0 0 0 4pt rgb(87, 87, 87);
+        overflow: hidden;
+      }
+      #button .box {
+        border-radius: 30px;
+        border: 15px solid rgb(175, 175, 175);
+        display: block;
+        color: #4f4f4f;
+        box-shadow: inset 0 0 5pt 1pt rgb(87, 87, 87);
+        overflow: hidden;
+        background: #dedede;
+      }
+      #button .box span {
+        display: block;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(rgba(255, 255, 255, 0.1)),
+          color-stop(49%, rgba(255, 255, 255, 0.05)),
+          color-stop(51%, rgba(0, 0, 0, 0.05)),
+          to(rgba(0, 0, 0, 0.1))
+        );
+      }
+      #button .box span::before {
+        content: "🐷";
+      }
+      #button .box span::after {
+        content: "🐷";
+      }
+    </style>
+  </head>
+
+  <span id="button">
+    <span class="box">
+      <span style="line-height: 200px">CHECKOUT</span>
+    </span>
+  </span>
+</html>
+<!-- You can change the line-height property as height -->
